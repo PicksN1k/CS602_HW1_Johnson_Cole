@@ -20,7 +20,7 @@ export const lookupByCourseName= (name) => {
 	let result;
 	// fill the code
 	
-	result = courseData.courses.filter(course => course.courseName.toLowerCase().includes(name.toLowerCase()));
+	result = courseData.courses.filter(course => course.CourseName.toLowerCase().includes(name.toLowerCase()));
 	
 	return result;
 };
