@@ -9,6 +9,9 @@ export const lookupByCourseId =  (id) => {
 	let result;
 	// fill the code
 
+	let pattern = new RegExp(id);
+	result = courseData.courses.filter(course => pattern.test(course.courseId));
+
 	return result;
 };
 
@@ -16,6 +19,8 @@ export const lookupByCourseName= (name) => {
   console.log("\nLookup by CourseName", name);
 	let result;
 	// fill the code
+	
+	result = courseData.courses.filter(course => course.courseName.toLowerCase().includes(name.toLowerCase()));
 	
 	return result;
 };
@@ -25,6 +30,9 @@ export const getRandomCourse = () => {
 	let result;
 	// fill the code
 	
+	let index = Math.floor(Math.random() * courseData.courses.length);
+	result = courseData.courses[index];
+
 	return result;
 };
 
