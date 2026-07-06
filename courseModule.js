@@ -10,7 +10,7 @@ export const lookupByCourseId =  (id) => {
 	// fill the code
 
 	let pattern = new RegExp(id);
-	result = courseData.courses.filter(course => pattern.test(course.courseId));
+	result = courseData.courses.filter(course => pattern.test(course.course_id));
 
 	return result;
 };
@@ -20,7 +20,7 @@ export const lookupByCourseName= (name) => {
 	let result;
 	// fill the code
 	
-	result = courseData.courses.filter(course => course.CourseName.toLowerCase().includes(name.toLowerCase()));
+	result = courseData.courses.filter(course => course.course_name.toLowerCase().includes(name.toLowerCase()));
 	
 	return result;
 };
