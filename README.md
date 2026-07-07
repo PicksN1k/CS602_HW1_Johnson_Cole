@@ -64,6 +64,7 @@ The output will display the matching course objects.
 - part2_client.js
 - courseModule.js
 - cs_courses.json
+- package.json
 
 The server must be started before running the client.
 
