@@ -32,27 +32,5 @@ client.on('end', function(){
 
 client.on('data', function(data){
 	console.log("...Received", 
-    		data.toString());
+    		JSON.parse(data.toString()));
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
